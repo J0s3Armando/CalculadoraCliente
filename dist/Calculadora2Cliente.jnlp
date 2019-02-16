@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Calculadora2Cliente.jnlp">
+  <information>
+    <title>Calculadora2Cliente</title>
+    <vendor>J.Armando</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Calculadora2Cliente.jar" size="20949" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="calculadora2cliente.Calculadora2Cliente"  name="Calculadora2Cliente" />
+  <update check="always"/>
+</jnlp>

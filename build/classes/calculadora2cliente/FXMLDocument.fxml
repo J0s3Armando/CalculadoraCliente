@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora2cliente.FXMLDocumentController">
+   <top>
+      <VBox prefHeight="138.0" prefWidth="381.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="391.0">
+               <children>
+                  <Label text="Estándar">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="381.0">
+               <children>
+                  <Label id="lblHistorial" fx:id="lblHistorial" text="230 + 4" textFill="#b2afaf">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="381.0">
+               <children>
+                  <Label id="numeros" fx:id="lblNumeros" text="234">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="15.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" />
+   </padding>
+   <center>
+      <HBox prefHeight="314.0" prefWidth="334.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="393.0" prefWidth="81.0" spacing="4.0">
+               <children>
+                  <Button fx:id="btnRaiz" mnemonicParsing="false" onAction="#sacarRaiz" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="√" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero1" mnemonicParsing="false" onAction="#btnNumero1_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="1" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero4" mnemonicParsing="false" onAction="#btnNumero4_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="4" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero7" mnemonicParsing="false" onAction="#btnNumero7_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="7" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLimpiar" mnemonicParsing="false" onAction="#limpiarPantalla" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="C" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="393.0" prefWidth="81.0" spacing="4.0">
+               <children>
+                  <Button fx:id="btnElevar" mnemonicParsing="false" onAction="#elevarPotencia" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="x²" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero2" mnemonicParsing="false" onAction="#btnNumero2_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero5" mnemonicParsing="false" onAction="#btnNumero5_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="5" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero8" mnemonicParsing="false" onAction="#btnNumero8_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="8" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero0" mnemonicParsing="false" onAction="#btnNumero0_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="0" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="393.0" prefWidth="81.0" spacing="4.0">
+               <children>
+                  <Button fx:id="btnDividir" mnemonicParsing="false" onAction="#dividir" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="∕" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero3" mnemonicParsing="false" onAction="#btnNumero3_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="3" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero6" mnemonicParsing="false" onAction="#btnNumero6_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="6" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNumero9" mnemonicParsing="false" onAction="#btnNumero9_clcik" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #D3D7D9;" text="9" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPunto" mnemonicParsing="false" onAction="#agregarPunto" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="." textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="393.0" prefWidth="81.0" spacing="4.0">
+               <children>
+                  <Button fx:id="btnBorrarNumeros" mnemonicParsing="false" onAction="#borrarNumeros" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="←" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnMultiplicar" mnemonicParsing="false" onAction="#multiplicar" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="x" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRestar" mnemonicParsing="false" onAction="#restar" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="-" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSumar" mnemonicParsing="false" onAction="#sumar" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="+" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSumar" mnemonicParsing="false" onAction="#mostrarTotal" prefHeight="58.0" prefWidth="81.0" style="-fx-background-color: #f2f2f2;" text="=" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
